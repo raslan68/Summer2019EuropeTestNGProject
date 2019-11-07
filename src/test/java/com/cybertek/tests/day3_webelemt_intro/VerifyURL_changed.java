@@ -40,7 +40,7 @@ public class VerifyURL_changed {
 
         }
         //close
-        driver.quit();
+
 
 
 
