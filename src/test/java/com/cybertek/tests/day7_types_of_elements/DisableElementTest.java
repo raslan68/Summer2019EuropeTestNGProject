@@ -15,13 +15,13 @@ public class DisableElementTest {
         driver.manage().window().maximize();
         driver.get("http://practice.cybertekschool.com/radio_buttons");
 
-        WebElement greenRdioButton = driver.findElement(By.id("green"));
+        WebElement greenRadioButton = driver.findElement(By.id("green"));
 
         //how can we check is button enable or not?
-        System.out.println("is element enabled: "+ greenRdioButton.isEnabled());
+        System.out.println("is element enabled: "+ greenRadioButton.isEnabled());
 
         //verify that green button is disabled
-        Assert.assertFalse(greenRdioButton.isEnabled(),"verif that green button is disable");
+        Assert.assertFalse(greenRadioButton.isEnabled(),"verif that green button is disable");
 
         driver.quit();
 

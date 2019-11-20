@@ -21,7 +21,7 @@ public class RadioButtonTest {
         WebElement blueRadioButton = driver.findElement(By.id("blue"));
         WebElement redRadioButton = driver.findElement(By.id("red"));
 
-        //how to chwck rwdio button selected or not?
+        //how to check radio button selected or not?
         System.out.println("is blue selected " + blueRadioButton.isSelected());
         System.out.println("is red selected " + redRadioButton.isSelected());
 
