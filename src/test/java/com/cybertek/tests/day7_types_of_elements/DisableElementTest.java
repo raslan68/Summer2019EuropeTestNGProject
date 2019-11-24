@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class DisableElementTest {
 
-    @Test
+    /**@Test
     public  void  tast1(){
         WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
@@ -25,7 +25,7 @@ public class DisableElementTest {
 
         driver.quit();
 
-    }
+    }*/
 
     @Test
     public  void test2(){
@@ -40,5 +40,6 @@ public class DisableElementTest {
         inputBox.sendKeys("Mike Smith");
 
 
-    }
+
+}
 }
