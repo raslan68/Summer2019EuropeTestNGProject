@@ -28,18 +28,16 @@ public class PopupsAndAlerts {
     }
 
     @Test
-    public void test1() {
+    public void htmlPopUp(){
         driver.get("https://www.primefaces.org/showcase/ui/overlay/confirmDialog.xhtml");
-
+        //locating and clicking destroy button
         driver.findElement(By.xpath("//*[text()='Destroy the World']")).click();
-
-        driver.findElements(By.xpath("//button[@id='j_idt710:j_idt714']"));
+        //locating No button and clicking it
+        driver.findElement(By.xpath("//*[text()='No']")).click();
     }
-
     @Test
-    public  void Alerts() throws InterruptedException{
+    public void Alerts() throws InterruptedException {
         driver.get("http://practice.cybertekschool.com/javascript_alerts");
-
         //Click for JS Alert
         driver.findElement(By.xpath("//button[1]")).click();
         //Controling alert using with Alert class
@@ -61,6 +59,7 @@ public class PopupsAndAlerts {
         //when we send the text, we might not see the text in the inputbox.
         Thread.sleep(500);
         alert.accept();
+
 
 
 
