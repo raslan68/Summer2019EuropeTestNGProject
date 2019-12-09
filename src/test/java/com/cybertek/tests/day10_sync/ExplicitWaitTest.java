@@ -19,6 +19,7 @@ public class ExplicitWaitTest {
     public void setUpMethod(){
         driver = WebDriverFactory.getDriver("chrome");
     }
+
     @AfterMethod
     public void tearDownMethod() throws InterruptedException {
 
@@ -27,13 +28,17 @@ public class ExplicitWaitTest {
     @Test
     public void test1() throws InterruptedException {
         driver.get("http://practice.cybertekschool.com/dynamic_loading/1");
+
         //clicking the start button
         driver.findElement(By.tagName("button")).click();
+
         //find the username inputbox
         WebElement username = driver.findElement(By.id("username"));
+
         //HOW TO WAIT EXPLICITLY ?
         //Create Explicit wait object
         WebDriverWait wait = new WebDriverWait(driver,50);
+
         //call until method from wait object
         //waiting for the specific element to be visible (up to 10 sec)
         wait.until(ExpectedConditions.visibilityOf(username));
@@ -61,6 +66,8 @@ public class ExplicitWaitTest {
         inputBox.sendKeys("Something something");
 
     }
+
+
 
 
 
